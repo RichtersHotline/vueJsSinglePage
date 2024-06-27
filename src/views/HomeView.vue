@@ -9,6 +9,9 @@
 <section class="row" id="resume">
 
 </section>
+<section class="row" id="skills">
+<SkillsPage/>
+</section>
 <section class="row" id="project">
 
 </section>
@@ -28,12 +31,14 @@
 import LandingPage from "@/components/LandingPage.vue"
 import AboutPage from '@/components/AboutPage.vue'
 import EducationPage from "@/components/EducationPage.vue"
+import SkillsPage from "@/components/SkillsPage.vue"
 export default {
   name: 'HomeView',
   components: {
   LandingPage,
   AboutPage,
-  EducationPage
+  EducationPage,
+  SkillsPage
   }
 }
 </script>
