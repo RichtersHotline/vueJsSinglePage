@@ -22,7 +22,7 @@ export default createStore({
 
     },
     setAbout(state, value) {
-      state.About = value
+      state.aboutMe = value
   
       },
       setEducation(state, value) {
@@ -88,8 +88,8 @@ export default createStore({
   },
   async getEducation(context) {
     try {
-      let {education} = await (await axios.get(portData)).data
-      context.commit("setEducation", education)
+      let {Education} = await (await axios.get(portData)).data
+      context.commit("setEducation", Education)
    
     }catch(e) {
 
