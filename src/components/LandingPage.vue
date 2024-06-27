@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
 <div class="row vh-100 align-items-center">
 <div class="col">
 
@@ -30,32 +30,7 @@ import {useStore} from "vuex"
 import LoadingSpinner from "./LoadingSpinner.vue"
 const store = useStore()
 const jobTitle = computed(() => store.state.jobTitle)
-// const jobName = ref("Aspiring Developer")
-// const cnt = ref(-1)
 
-
-
-// function repeat() {
-
-//     try{
-//         if (cnt.value == jobTitle.value?.length) cnt.value = 0;
-//         jobName.value =
-//         jobTitle.value?.at(cnt.value)?.jobName;
-//         setTimeout(repeat, 2000)
-      
-//         cnt.value++
-
-//     }catch (e) {
-        
-        
-//         console.log(e.message)
-
-//     }
-
-
-
-
-// }
 
 onMounted(() => {
    

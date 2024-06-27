@@ -45,9 +45,9 @@ img[alt="logo"] {
 
 }
 /* wrapper */
-:is(.wrapper) {
+/* :is(.wrapper) {
 
   display:grid;
   grid-template-rows:auto minmax(100dvh, 100%) auto;
 
-}
+} */

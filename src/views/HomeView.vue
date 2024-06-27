@@ -4,7 +4,7 @@
 <LandingPage/>
 </section>
 <section class="row" id="about">
-
+<AboutPage/>
 </section>
 <section class="row" id="resume">
 
@@ -24,10 +24,12 @@
 <script>
 // @ is an alias to /src
 import LandingPage from "@/components/LandingPage.vue"
+import AboutPage from '@/components/AboutPage.vue'
 export default {
   name: 'HomeView',
   components: {
-  LandingPage
+  LandingPage,
+  AboutPage
   }
 }
 </script>
