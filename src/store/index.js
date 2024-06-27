@@ -22,7 +22,7 @@ export default createStore({
 
     },
     setAbout(state, value) {
-      state.aboutMe = value
+      state.About = value
   
       },
       setEducation(state, value) {
@@ -69,11 +69,12 @@ export default createStore({
     },
     async getAbout(context) {
       try {
-        let {aboutMe} = await (axios.get(portData)).data
-        context.commit("setAbout", aboutMe)
+        let {About} = await (await axios.get(portData)).data
+        context.commit("setAbout", About)
      
       }catch(e) {
-  
+  console.log("Nope")
+
         Swal.fire ({
   
           title: "error",
@@ -87,7 +88,7 @@ export default createStore({
   },
   async getEducation(context) {
     try {
-      let {education} = await (axios.get(portData)).data
+      let {education} = await (await axios.get(portData)).data
       context.commit("setEducation", education)
    
     }catch(e) {
@@ -105,7 +106,7 @@ export default createStore({
 },
 async getSkills(context) {
   try {
-    let {skills} = await (axios.get(portData)).data
+    let {skills} = await (await axios.get(portData)).data
     context.commit("setSkills", skills)
  
   }catch(e) {
@@ -123,7 +124,7 @@ async getSkills(context) {
 },
 async getMonials(context) {
   try {
-    let {monials} = await (axios.get(portData)).data
+    let {monials} = await (await axios.get(portData)).data
     context.commit("setQuotes", monials)
  
   }catch(e) {
@@ -141,7 +142,7 @@ async getMonials(context) {
 },
 async getProjects(context) {
   try {
-    let {projects} = await (axios.get(portData)).data
+    let {projects} = await (await axios.get(portData)).data
     context.commit("setProject", projects)
  
   }catch(e) {
@@ -159,7 +160,7 @@ async getProjects(context) {
 },
 async getExperiences(context) {
   try {
-    let {experiences} = await (axios.get(portData)).data
+    let {experiences} = await (await axios.get(portData)).data
     context.commit("setExperiences", experiences)
  
   }catch(e) {
