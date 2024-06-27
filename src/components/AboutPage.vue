@@ -8,10 +8,10 @@
                 <div class="col">
                   </div>
                   <div class="col-md">
-                    <div v-if="About?.length">
+                    <div v-if="aboutMe?.length">
                     
                     
-                    <p class="text-start ">{{About[0]?.Aboutme}}</p>
+                    <p class="text-start ">{{aboutMe[0]?.Aboutme}}</p>
                     </div>
                     <LoadingSpinner v-else>
                         
@@ -33,7 +33,7 @@ import {computed, onMounted} from "vue"
 import {useStore} from "vuex"
 import LoadingSpinner from "./LoadingSpinner.vue"
 const store = useStore()
-const About = computed(() => store.state.About)
+const aboutMe = computed(() => store.state.aboutMe)
 
 
 onMounted(() => {
