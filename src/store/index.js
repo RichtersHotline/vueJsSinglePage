@@ -1,6 +1,8 @@
 import { createStore } from 'vuex'
 import axios from "axios"
 import Swal from "sweetalert2/dist/sweetalert2"
+
+
 const portData = "https://richtershotline.github.io/VueEOMP/data"
 export default createStore({
   state: {
@@ -47,7 +49,7 @@ export default createStore({
   actions: {
    async getJobTitle(context) {
     try {
-      let {jobTitle} = await (axios.get(portData)).data
+      let {jobTitle} = await (await axios.get(portData)).data
       context.commit("setJobTitle", jobTitle)
    
     }catch(e) {
