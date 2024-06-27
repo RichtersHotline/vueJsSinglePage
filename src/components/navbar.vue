@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <router-link class="nav-link" aria-current="page" href="/">Home</router-link>
+                <a class="nav-link" aria-current="page" href="#landing">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
