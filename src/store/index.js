@@ -124,8 +124,8 @@ async getSkills(context) {
 },
 async getMonials(context) {
   try {
-    let {monials} = await (await axios.get(portData)).data
-    context.commit("setQuotes", monials)
+    let {Testimonials} = await (await axios.get(portData)).data
+    context.commit("setQuotes", Testimonials)
  
   }catch(e) {
 

@@ -24,6 +24,7 @@
   
 </section>
 <section class="row" id="testimonials">
+<MonialComp/>
 </section>
 <section class="row" id="reachme">
 
@@ -38,6 +39,7 @@ import AboutPage from '@/components/AboutPage.vue'
 import EducationPage from "@/components/EducationPage.vue"
 import SkillsPage from "@/components/SkillsPage.vue"
 import ExpPage from "@/components/ExpPage.vue"
+import MonialComp from "@/components/MonialComp.vue"
 export default {
   name: 'HomeView',
   components: {
@@ -45,7 +47,8 @@ export default {
   AboutPage,
   EducationPage,
   SkillsPage,
-  ExpPage
+  ExpPage,
+  MonialComp
   }
 }
 </script>

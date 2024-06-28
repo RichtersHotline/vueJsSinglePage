@@ -16,7 +16,7 @@ const jobTitle = computed(() => store.state.jobTitle)
 
 onMounted(() => {
    
-    store.dispatch("getJobTitle")
+    store.dispatch("getMonials")
     // repeat()
 
 })
